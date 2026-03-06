@@ -1,0 +1,52 @@
+{
+  "project_type": "nextjs",
+  "scaffold_command": "npx create-next-app@latest ./ --typescript --tailwind --eslint --app --no-src-dir --import-alias @/* --yes --force",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Set up project configuration",
+      "commit_message": "chore: add project configuration",
+      "files": [
+        {
+          "path": "tsconfig.json",
+          "description": "TypeScript config"
+        },
+        {
+          "path": "app/layout.tsx",
+          "description": "Root layout component"
+        }
+      ]
+    },
+    {
+      "step_number": 2,
+      "description": "Create main clock page with vintage styling",
+      "commit_message": "feat: create main clock page with vintage design",
+      "files": [
+        {
+          "path": "app/page.tsx",
+          "description": "Main clock page with digital and analog displays"
+        },
+        {
+          "path": "app/styles/globals.css",
+          "description": "Global styles with glassmorphism and gold accents"
+        }
+      ]
+    },
+    {
+      "step_number": 3,
+      "description": "Implement clock components and controls",
+      "commit_message": "feat: add clock components and interactive controls",
+      "files": [
+        {
+          "path": "components/AnalogClock.tsx",
+          "description": "Analog clock face with gold hands"
+        },
+        {
+          "path": "components/ControlPanel.tsx",
+          "description": "Control panel with stopwatch and countdown functionality"
+        }
+      ]
+    }
+  ],
+  "test_command": "npm run build"
+}
